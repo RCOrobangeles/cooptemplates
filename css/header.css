@@ -18,11 +18,11 @@
     }
 
     .searchDiv {
-      width: 752px;
       height: 34px;
       position: relative;
       top: 18px;
       left: 35px;
+      width: 900px;
     }
     .searchBox {
       width: 344px;

@@ -237,6 +237,14 @@ h2.label {
   text-align: left;
 }
 
+#itemsPerPage {
+  width: 200px;
+}
+
+#sortResultsBy {
+  width: 200px;
+}
+
 #step1 {
   width: 235px !important;
 } 
