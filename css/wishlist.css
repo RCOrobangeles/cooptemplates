@@ -1039,7 +1039,6 @@ textarea{
 	padding-right:18px;
 	padding-top:12px;
 	margin-top:14px;
-	background-color:#00FF66;
 	
 }
 
@@ -1047,7 +1046,6 @@ textarea{
 	width:460px;
 	height:264px;
 	float:left;
-	background-color:#CC9966;
 	margin-bottom:18px;
 }
 
@@ -1078,16 +1076,31 @@ textarea{
 	width:460px;
 	height:217px;
 	display:left;
-	background-color:#996699;
 	margin-top:10px;
 }
 
 .cc-number{
 	width:450px;
 	height:58px;
+	border-radius:5px 5px 0px 0px;
 	float:left;
 	padding-left:10px;
-	background-color:#999999;
+	background-image: linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.16, rgb(161,161,161)),
+	color-stop(1, rgb(59,58,59))
+	);
+	
+
+
 }
 
 .cc-dropdown{
@@ -1095,8 +1108,31 @@ textarea{
 	height:16px;
 	float:left;
 	padding-left:10px;
-	background-color:#666666;
+	background-image: linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(161,161,161) 16%, rgb(59,58,59) 100%);
 
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.16, rgb(161,161,161)),
+	color-stop(1, rgb(59,58,59))
+	);	
+
+}
+
+.cc-dropdown img{
+	width:16px;
+	height:16px;
+	float:left;
+	margin-left:214px;
+}
+
+.cc-dropdown a{
+	text-decoration:none;
 }
 
 .cc-dropdownDetails{
@@ -1104,14 +1140,13 @@ textarea{
 	height:148px;
 	float:left;
 	padding-left:10px;
-	background-color:#66FF00;
+	background-color:#E8E8E8;
 }
 
 .ccdetail-input{
 	width:438px;
 	height:32px;
 	float:left;
-	background-color:#00CC00;
 	margin-top:14px;
 }
 
@@ -1119,11 +1154,105 @@ textarea{
 	width:122px;
 	height:14px;
 	float:left;
-	background-color:#CCFF00;
 	margin-top:10px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	font-size:12px;
 	color:#000;
 	margin-right:10px;
+}
+
+
+
+.cardnumber, textarea{
+	width:290px;
+	line-height:17px;
+	height:20px;
+	font-size:12px;
+	font-family:Helvetica, Arial, sans-serif;
+	padding:5px;
+	border:1px solid #999999;
+	outline:none;
+	background-color:#FFF;
+	color:#000;
+	margin-bottom:8px;
+	border-radius:5px;
+	float:left;
+}
+
+form.cardnumber{
+	margin-top:0px;
+}
+
+form.cardnumber input{
+	width:290px;
+	font-size:12px;
+}
+
+
+.cardnumber-expiry, textarea{
+	width:170px;
+	line-height:17px;
+	height:20px;
+	font-size:12px;
+	font-family:Helvetica, Arial, sans-serif;
+	padding:5px;
+	border:1px solid #999999;
+	outline:none;
+	background-color:#FFF;
+	color:#000;
+	margin-bottom:8px;
+	border-radius:5px;
+	float:left;
+}
+
+form.cardnumber-expiry{
+	margin-top:0px;
+}
+
+form.cardnumber-expiry input{
+	width:170px;
+	font-size:12px;
+}
+
+
+
+.cardnumber-security, textarea{
+	width:80px;
+	line-height:17px;
+	height:20px;
+	font-size:12px;
+	font-family:Helvetica, Arial, sans-serif;
+	padding:5px;
+	border:1px solid #999999;
+	outline:none;
+	background-color:#FFF;
+	color:#000;
+	margin-bottom:8px;
+	border-radius:5px;
+	float:left;
+}
+
+form.cardnumber-security{
+	margin-top:0px;
+}
+
+form.cardnumber-security input{
+	width:80px;
+	font-size:12px;
+}
+
+.ccdetail-input a{
+	text-decoration:none;
+	font-style:italic;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	color:#68C04A;
+	margin-top:10px;
+	margin-left:10px;;
+}
+
+.ccn-white{
+	color:#fff;
 }
