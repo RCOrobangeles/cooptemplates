@@ -238,5 +238,57 @@ h2.label {
 }
 
 #step1 {
-  width: 280px !important;
+  width: 235px !important;
 } 
+#step2 {
+  width: 235px !important;
+}
+#step3 {
+  width: 270px !important;
+}
+
+#textBookSearchSubmit {
+  float:right; margin-right: 9px;
+}
+
+    .textBookSearchResultsHeading h3 {
+      height: 22px;
+margin-top: 22px;
+padding: 12px;
+background-color: #67C247;
+background: -linear-gradient(center top , #67C247, #2FA206) repeat scroll 0 0 transparent;
+background: -moz-linear-gradient(center top , #67C247, #2FA206) repeat scroll 0 0 transparent;
+background: -o-linear-gradient(center top , #67C247, #2FA206) repeat scroll 0 0 transparent;
+background: -webkit-linear-gradient(center top , #67C247, #2FA206) repeat scroll 0 0 transparent;
+background: -ms-linear-gradient(center top , #67C247, #2FA206) repeat scroll 0 0 transparent;
+border-radius: 5px 5px 0px 0px;
+font-family: 'Paytone One', sans-serif;
+font-size: 16px;
+color: white;
+font-weight: normal;
+    }
+
+.textBookSearchResultsContent {
+  padding-top: 10px;
+  background: url('../images/search_result_bg.jpg') top repeat-x;
+  padding-bottom:;
+}  
+
+.textBookSearchResultsContent p {
+  font-size: .7em;
+  margin: 5px 20px;
+}
+
+.textBookSearchButtons {
+  float: right;
+}
+
+.textBookSearchButtons input {
+  margin-left: 10px;
+}
+
+.textBookSearchClearFilter {
+  margin-right:10px; text-decoration:none; color:#1e6cb6; font-size:9px;
+  float: right;
+  margin-top: 5px;
+}

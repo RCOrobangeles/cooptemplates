@@ -39,7 +39,7 @@
       <span class="clear"></span> 
     </div> 
     <div class="row bottomMargin"> 
-      <div class="logo"></div> 
+      <div class="logo"><a href="/">The Co-op Bookshop</a></div> 
         <div class="searchDiv"> 
           <input type="text" class="searchBox" placeholder="Book search by keyword" /> 
           <input type="button" class="searchButton" value="Search" /> 
@@ -47,7 +47,6 @@
           <input type="button" class="grayButton browseButton" value="Browse"> 
         </div> 
     </div> 
-  </div> 
   <span class="clear"></span> 
   <!-- header ends here --> 
  
@@ -84,7 +83,8 @@
         </tr>
         <tr>
           <td colspan="3" style="padding-top:14px;">
-            <a href="#" style="margin-right:10px; text-decoration:none; color:#1e6cb6; font-size:9px;">Clear Filter and Start Again</a><input type="button" value="Search" class="greenButton" style="float:right; margin-right: 9px;">
+            <input type="button" value="Search" class="greenButton" id="textBookSearchSubmit" />
+            <a href="#" class="textBookSearchClearFilter">Clear Filter and Start Again</a>
           </td> 
         </tr>
       </table>
@@ -106,12 +106,102 @@
 
         });
       </script>
+
+
     </div>
     <span class="clear"></span>
 
+    <div class="row">
+      <div class="textBookSearchResultsHeading">
+        <h3>Your Search Results</h3>
+      </div>
+      <div class="textBookSearchResultsContent">
+        <p><strong>Institution:</strong> Australian College of Dermatologists</p>
+        <p><strong>Course Code:</strong> CSP</p>
+        <p><strong>Subject:</strong> Clinical Sciences and Pharmacology</p>
+        <p><strong>Lecturer:</strong> Unknown</p>
+        <p><strong>Notes:</strong> Lorem ipsum dolor sit amet, consectetur adipi</p>
+        <p><strong>Store:</strong> Mediacal and Professional</p>
+      </div>
+    </div>
+    <div class="textBookSearchResultsHeading">
+        <h3>50 Items Found</h3>
+    </div>  
+    <div class="row">
+      <div class="row searchPageNav">
+      Page
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
 
+      <div class="searchPagePrevNext">
+        <input type="button" class="greenButton" value="Prev" id="searchPrev" />
+        <input type="button" class="greenButton"  value="Next" id="searchNext" />
+      </div>
+    </div>
+
+    <div class="row result" itemscope itemtype="http://schema.org/Book">
+      <img alt="Book Title" src="images/placeholder_book.jpg" itemprop="image" class="bookImage" />
+      <div class="bookTitle" itemprop="name">Steve Jobs</div>
+      <div class="bookDetails">
+        <p itemprop="author">Jon McGregor</p>
+        <p>Textbook</p>
+        <p itemprop="bookFormat">Paperback</p>
+          <div class="starContainer">
+            Rate
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_off.jpg" alt="Star Off" />
+          </div>
+      </div>
+      <div class="bookDetails">
+        <p><strong>Availability:</strong> 6 in stock</p>
+        <p class="RRP">RRP <span class="RRPValue">$120.00</span></p>
+        <p class="nonMembers">Non-Members <span class="nonMembersValue">$100</span></p>
+        <p class="members">Members <span class="membersValue">$82</span></p>
+      </div>
+      <div class="bookDetails">
+        <div class="greenButton">Add to Basket</div>
+      </div>
+    </div> 
     
+    <div class="row result" itemscope itemtype="http://schema.org/Book">
+      <img src="images/placeholder_book.jpg" itemprop="image" alt="Placeholder" class="bookImage" />
+      <div class="bookTitle" itemprop="name">Steve Jobs</div>
+      <div class="bookDetails">
+        <p itemprop="author">Jon McGregor</p>
+        <p>Textbook</p>
+        <p itemprop="bookFormat">Paperback</p>
+          <div class="starContainer">
+            Rate
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_on.jpg" alt="Star" />
+            <img src="images/star_off.jpg" alt="Star Off" />
+          </div>
+      </div>
+      <div class="bookDetails">
+        <p><strong>Availability:</strong> 6 in stock</p>
+        <p class="RRP">RRP <span class="RRPValue">$120.00</span></p>
+        <p class="nonMembers">Non-Members <span class="nonMembersValue">$100</span></p>
+        <p class="members">Members <span class="membersValue">$82</span></p>
+      </div>
+      <div class="bookDetails">
+        <div class="greenButton">Add to Basket</div>
+      </div>
+    </div> 
+    </div>
 
+    <div class="textBookSearchButtons">
+      <input type="button" value="Continue Shopping" class="greenButton" />
+      <input type="button" value="Proceed to Checkout" class="greenButton" />
+
+  </div>
     <span class="clear"></span>
 
 
@@ -230,6 +320,8 @@
         <div class="copyright">Copyright &copy; 2012 University Co-operative Bookshop Limited</div> 
       </div> 
     </div> 
+      </div> 
+
   </div> 
   <!-- footer ends here --> 
 </body>

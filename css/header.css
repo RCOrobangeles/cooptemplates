@@ -1,8 +1,12 @@
-    .logo {
+    .logo a {
       width: 140px;
       height: 68px;
-      background: url('../images/coop_logo.jpg') no-repeat;
+      background: url('../images/coop_logo.png') no-repeat;
       cursor: pointer;
+      float: left;
+      margin-bottom:20px;
+      text-indent: -9999px;
+      display: block;
     }
     .navigation {
       font-family: 'Paytone One', sans-serif;
@@ -18,7 +22,7 @@
       height: 34px;
       position: relative;
       top: 18px;
-      left: 245px;
+      left: 35px;
     }
     .searchBox {
       width: 344px;
@@ -46,17 +50,24 @@
 	  text-indent:-9999px;
     }
 
+    
+
     .textBookSearchButton {
-      padding-right: 40px !important;
+      padding-right: 20px !important;
       margin-left: 24px !important;
       padding-top: 5px !important;
       padding-bottom: 9px !important;
       padding-left: 20px !important;
+      float:left;
+      display: block !important;
     }
  
     .browseButton {
       margin-left: 15px !important;
-      padding-right: 35px;
+      padding-right: 15px;
+      float: left;
+            display: block !important;
+
     }
 
     .bottomMargin {
